@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1040" viewBox="0 0 1400 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Train Forge 匿名拳击训练案例</title>
+  <desc id="desc">展示业余拳击训练者的可重复一周课程表、训练重点和恢复信号。</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081826"/><stop offset="1" stop-color="#151831"/></linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#2de1c2"/><stop offset="1" stop-color="#ff8c42"/></linearGradient>
+    <style>
+      .title{font:700 44px Arial,Helvetica,sans-serif;fill:#f2fbff}.sub{font:400 22px Arial,Helvetica,sans-serif;fill:#a9c4d0}.h{font:700 23px Arial,Helvetica,sans-serif;fill:#e9f8ff}.t{font:400 18px Arial,Helvetica,sans-serif;fill:#bdd3dc}.small{font:400 16px Arial,Helvetica,sans-serif;fill:#bdd3dc}.badge{font:700 16px Arial,Helvetica,sans-serif;fill:#071827}
+    </style>
+  </defs>
+  <rect width="1400" height="1040" fill="url(#background)"/>
+  <rect x="64" y="54" width="1272" height="10" rx="5" fill="url(#brand)"/>
+  <text x="68" y="130" class="title">案例预览｜业余拳击 + 体成分重组</text>
+  <text x="68" y="172" class="sub">匿名演示数据 · 非医疗建议 · 一周可重复课程表</text>
+  <g transform="translate(68,214)">
+    <rect width="1264" height="122" rx="18" fill="#10263a" stroke="#21425b"/>
+    <text x="28" y="39" class="h">训练者档案</text>
+    <text x="28" y="76" class="t">业余拳击 5 个月 · 每周 2 次技术课 · 当前可完成 3 × 2 分钟回合</text>
+    <text x="28" y="105" class="t">目标：基础力量 / 肌肉保留优先，体脂下降与拳击体能作为次级目标</text>
+    <rect x="963" y="23" width="260" height="38" rx="19" fill="#2de1c2"/><text x="991" y="49" class="badge">计划精度：基础版</text>
+    <rect x="963" y="72" width="260" height="28" rx="14" fill="#ffb066"/><text x="991" y="93" class="badge">筛查：未评估</text>
+  </g>
+  <text x="68" y="390" class="h">本周课程表</text>
+  <g transform="translate(68,416)">
+    <rect width="178" height="355" rx="16" fill="#18344a"/><rect x="194" width="178" height="355" rx="16" fill="#243350"/><rect x="388" width="178" height="355" rx="16" fill="#18344a"/><rect x="582" width="178" height="355" rx="16" fill="#243350"/><rect x="776" width="178" height="355" rx="16" fill="#18344a"/><rect x="970" width="178" height="355" rx="16" fill="#20293c"/><rect x="1164" width="100" height="355" rx="16" fill="#20293c"/>
+    <text x="20" y="38" class="h">周一</text><text x="20" y="75" class="t">力量 A</text><text x="20" y="108" class="small">60 分钟</text><text x="20" y="151" class="small">卧推 3×6</text><text x="20" y="181" class="small">辅助引体 4×6</text><text x="20" y="211" class="small">高脚杯深蹲 3×8</text><text x="20" y="280" class="small">RPE 7</text><rect x="20" y="304" width="112" height="26" rx="13" fill="#2de1c2"/><text x="38" y="323" class="badge">力量基础</text>
+    <text x="214" y="38" class="h">周二</text><text x="214" y="75" class="t">拳击技术</text><text x="214" y="108" class="small">60–75 分钟</text><text x="214" y="151" class="small">跳绳 · 空击</text><text x="214" y="181" class="small">靶/组合</text><text x="214" y="211" class="small">技术回合</text><text x="214" y="280" class="small">不加冲刺</text><rect x="214" y="304" width="112" height="26" rx="13" fill="#ffb066"/><text x="232" y="323" class="badge">专项优先</text>
+    <text x="408" y="38" class="h">周三</text><text x="408" y="75" class="t">低强度有氧</text><text x="408" y="108" class="small">35–45 分钟</text><text x="408" y="151" class="small">鼻呼吸配速</text><text x="408" y="181" class="small">可完整交谈</text><text x="408" y="211" class="small">髋踝活动</text><text x="408" y="280" class="small">恢复优先</text><rect x="408" y="304" width="112" height="26" rx="13" fill="#82cfff"/><text x="426" y="323" class="badge">有氧基底</text>
+    <text x="602" y="38" class="h">周四</text><text x="602" y="75" class="t">力量 B</text><text x="602" y="108" class="small">60 分钟</text><text x="602" y="151" class="small">罗马尼亚硬拉 3×8</text><text x="602" y="181" class="small">地雷推举 3×8</text><text x="602" y="211" class="small">划船 3×10</text><text x="602" y="280" class="small">RPE 7</text><rect x="602" y="304" width="112" height="26" rx="13" fill="#2de1c2"/><text x="620" y="323" class="badge">力量基础</text>
+    <text x="796" y="38" class="h">周五</text><text x="796" y="75" class="t">拳击技术</text><text x="796" y="108" class="small">60–75 分钟</text><text x="796" y="151" class="small">步法 · 防守</text><text x="796" y="181" class="small">轻实战/回合</text><text x="796" y="211" class="small">放松整理</text><text x="796" y="280" class="small">保留 1–2 RIR</text><rect x="796" y="304" width="112" height="26" rx="13" fill="#ffb066"/><text x="814" y="323" class="badge">专项优先</text>
+    <text x="990" y="38" class="h">周六</text><text x="990" y="75" class="t">主动恢复</text><text x="990" y="108" class="small">步行 45–60 分钟</text><text x="990" y="151" class="small">肩背/髋部</text><text x="990" y="181" class="small">轻度活动</text><text x="990" y="280" class="small">可选，不补课</text><rect x="990" y="304" width="112" height="26" rx="13" fill="#82cfff"/><text x="1008" y="323" class="badge">恢复</text>
+    <text x="1184" y="38" class="h">周日</text><text x="1184" y="75" class="t">休息</text><text x="1184" y="108" class="small">睡眠</text><text x="1184" y="138" class="small">饮食</text><text x="1184" y="168" class="small">复盘</text><rect x="1182" y="304" width="64" height="26" rx="13" fill="#8ba0ad"/><text x="1195" y="323" class="badge">休息</text>
+  </g>
+  <g transform="translate(68,812)">
+    <rect width="608" height="164" rx="18" fill="#10263a" stroke="#21425b"/><text x="24" y="38" class="h">起始负重与进阶</text><text x="24" y="74" class="t">先以动作稳定和 RPE 7 为准；同重量完成全部组且仍余 2–3 次余力，</text><text x="24" y="104" class="t">下周仅增加 1–2 kg（哑铃为每手）或增加 1 次重复。</text><text x="24" y="138" class="small">不因错过训练叠加训练量；力量进展优先于短期体重波动。</text>
+    <rect x="656" width="608" height="164" rx="18" fill="#10263a" stroke="#21425b"/><text x="680" y="38" class="h">恢复交通灯</text><circle cx="704" cy="76" r="12" fill="#2de1c2"/><text x="728" y="82" class="t">绿：按原计划</text><circle cx="704" cy="112" r="12" fill="#ffcf5a"/><text x="728" y="118" class="t">黄：主训练减 1 组，跳过爆发附加项</text><circle cx="704" cy="148" r="12" fill="#fa6270"/><text x="728" y="154" class="t">红：休息 / 仅轻步行；出现异常症状则停止并评估</text>
+  </g>
+</svg>
