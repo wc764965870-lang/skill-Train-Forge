@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "train-forge",
+  "version": "1.0.0",
+  "description": "Personalized fitness, strength, conditioning, and sport-performance training plans through adaptive, optional intake."
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Train Forge</title>
+  <desc id="desc">Adaptive fitness and sport performance planning skill</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#071827"/>
+      <stop offset="1" stop-color="#10152d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#2de1c2"/>
+      <stop offset="1" stop-color="#ff8c42"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <path d="M0 570C245 420 432 705 698 494S1002 294 1280 366V720H0Z" fill="#102c42" opacity=".78"/>
+  <path d="M-40 536C265 334 469 670 742 417S1089 172 1330 286" fill="none" stroke="url(#accent)" stroke-width="14" opacity=".95"/>
+  <g fill="none" stroke="#2de1c2" stroke-width="8" stroke-linecap="round" opacity=".9">
+    <circle cx="950" cy="238" r="38"/>
+    <path d="M950 278v118m-66-40 66-50 66 50m-117 116 51-76 51 76m-51-76v112"/>
+  </g>
+  <text x="112" y="276" fill="#f4fbff" font-family="Arial, Helvetica, sans-serif" font-size="94" font-weight="700" letter-spacing="2">TRAIN FORGE</text>
+  <rect x="116" y="325" width="430" height="10" rx="5" fill="url(#accent)"/>
+  <text x="116" y="402" fill="#b8d1de" font-family="Arial, Helvetica, sans-serif" font-size="30">ADAPTIVE FITNESS &amp; SPORT PERFORMANCE PLANNING</text>
+  <text x="116" y="471" fill="#d7edf5" font-family="Arial, Helvetica, sans-serif" font-size="26">Assess · Plan · Train · Review</text>
+</svg>

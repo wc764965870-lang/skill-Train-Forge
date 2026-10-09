@@ -1,0 +1,13 @@
+interface:
+  display_name: Train Forge
+  short_description: 动态问答建档，为普通健身者和运动员锻造个性化训练计划
+  default_prompt: 使用 $train-forge 通过可跳过的动态问答了解我的目标和条件，再为我锻造个性化训练计划。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

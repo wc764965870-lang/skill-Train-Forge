@@ -2,7 +2,7 @@
 
 > 为普通健身者与专项运动参与者生成可执行、可调整、重视安全边界的个性化训练计划。
 
-![Train Forge cover](assets/train-forge-cover.png)
+![Train Forge cover](assets/train-forge-cover.svg)
 
 Train Forge 是一个面向 ChatGPT 与 Codex 的训练规划 Skill。它不会只给出一堆动作清单，而是先识别你的目标、训练经验、可用时间、器械与恢复条件，再输出一份能真正排进日历的课程表。
 
