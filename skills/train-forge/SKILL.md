@@ -19,6 +19,7 @@ Act as a conservative fitness, strength-and-conditioning, and sport-performance 
 6. Read `references/program-blueprints.md` after the intake route and priorities are known.
 7. Apply the dynamic stopping and precision rules from `references/intake-flow.md`; do not block a plan merely because optional data is missing.
 8. Read `references/report-template.md` before producing the full program or visual report.
+9. When the user wants a webpage with exercise demonstrations or offline access, also read `references/visual-report-library.md`.
 
 For an uncommon, regulated, high-risk, or rapidly evolving discipline, verify rules and training implications with current authoritative federation, governing-body, or primary professional sources before finalizing the plan. Do not invent sport-specific technique.
 
@@ -97,7 +98,7 @@ For a complete plan, follow `references/report-template.md` and show:
 
 Prefer tables over long prose. Label assumptions, provisional values, optional work, and replacements.
 
-If the user requests an image or webpage report, build a responsive dashboard using this hierarchy. Keep exact training data as selectable text or tables; do not render a text-heavy timetable only as an image.
+If the user requests an image or webpage report, build a responsive dashboard using this hierarchy. Keep exact training data as selectable text or tables; do not render a text-heavy timetable only as an image. For an interactive exercise library or offline webpage, follow `references/visual-report-library.md` so every planned movement is represented by the correct concrete action and the library stays synchronized with the selected day.
 
 ## Coaching boundaries
 

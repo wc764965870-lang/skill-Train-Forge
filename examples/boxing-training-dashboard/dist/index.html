@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12周拳击增肌减脂训练报告</title>
+  <meta name="description" content="个人拳击、力量、体能与减脂的12周可视化训练课程表">
+  <meta name="theme-color" content="#07090d">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23090b10'/%3E%3Cpath d='M18 42V22h10c7 0 11 3 11 8 0 3-2 5-4 6 4 1 6 4 6 8 0 7-5 10-13 10H18V42zm8-12h3c2 0 3-1 3-3s-1-3-4-3h-2v6zm0 16h3c3 0 5-1 5-4s-2-4-5-4h-3v8z' fill='%23d8ff3e' transform='translate(2 -7)'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #07090d;
+      --panel: #10141c;
+      --panel-2: #151b25;
+      --line: #283140;
+      --text: #f3f6fb;
+      --muted: #9aa6b5;
+      --lime: #d8ff3e;
+      --cyan: #52d9ff;
+      --orange: #ff9f43;
+      --green: #42db8f;
+      --red: #ff6678;
+      --shadow: 0 22px 70px rgba(0,0,0,.35);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 14% 0%, rgba(82,217,255,.09), transparent 28rem),
+        radial-gradient(circle at 88% 10%, rgba(216,255,62,.08), transparent 30rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    button { font: inherit; }
+    .shell { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 28px 0 64px; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 28px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .mark {
+      width: 44px; height: 44px; display: grid; place-items: center;
+      background: var(--lime); color: #0b0e12; border-radius: 13px;
+      font-weight: 900; letter-spacing: -.04em; transform: rotate(-3deg);
+    }
+    .brand-title { font-weight: 750; letter-spacing: -.02em; }
+    .brand-sub { color: var(--muted); font-size: .82rem; }
+    .phase-chip { color: var(--lime); border: 1px solid rgba(216,255,62,.28); background: rgba(216,255,62,.06); border-radius: 999px; padding: 8px 13px; font-size: .84rem; font-weight: 700; }
+
+    .hero { display: grid; grid-template-columns: 1.25fr .75fr; gap: 18px; margin-bottom: 18px; }
+    .panel { background: linear-gradient(145deg, rgba(21,27,37,.96), rgba(12,16,23,.96)); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); }
+    .intro { padding: 30px; min-height: 282px; position: relative; overflow: hidden; }
+    .intro::after {
+      content: "12"; position: absolute; right: -8px; bottom: -44px;
+      font-size: 12rem; line-height: 1; font-weight: 900; color: rgba(255,255,255,.025); letter-spacing: -.1em;
+    }
+    .eyebrow { color: var(--lime); font-size: .8rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { max-width: 760px; font-size: clamp(2.1rem, 6vw, 4.7rem); line-height: .98; letter-spacing: -.065em; margin: 12px 0 18px; }
+    h1 span { color: var(--lime); }
+    .intro p { max-width: 690px; color: var(--muted); margin: 0 0 24px; font-size: 1.05rem; }
+    .priority { display: flex; gap: 8px; flex-wrap: wrap; position: relative; z-index: 1; }
+    .priority span { background: #1c2430; color: #dce3ec; border-radius: 999px; padding: 7px 11px; font-size: .82rem; }
+
+    .profile { padding: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-content: start; }
+    .profile h2 { grid-column: 1 / -1; margin: 0 0 6px; font-size: 1rem; color: var(--muted); font-weight: 600; }
+    .metric { min-height: 94px; padding: 16px; border-radius: 17px; background: rgba(255,255,255,.035); border: 1px solid rgba(255,255,255,.055); }
+    .metric strong { display: block; font-size: 1.7rem; line-height: 1; letter-spacing: -.04em; margin-bottom: 7px; }
+    .metric small { color: var(--muted); font-size: .78rem; }
+    .metric.accent strong { color: var(--lime); }
+
+    .section { margin-top: 18px; padding: 24px; }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 16px; margin-bottom: 17px; }
+    .section-head h2 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; }
+    .section-head p { margin: 4px 0 0; color: var(--muted); font-size: .88rem; }
+    .legend { display: flex; gap: 12px; color: var(--muted); font-size: .78rem; flex-wrap: wrap; }
+    .legend span { display: inline-flex; align-items: center; gap: 5px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+    .dot.strength { background: var(--lime); }
+    .dot.boxing { background: var(--cyan); }
+    .dot.aerobic { background: var(--orange); }
+    .dot.recovery { background: #738094; }
+
+    .week-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 9px; }
+    .day-card {
+      appearance: none; text-align: left; color: var(--text); min-width: 0; min-height: 154px;
+      border-radius: 17px; padding: 14px; border: 1px solid var(--line); background: rgba(255,255,255,.025);
+      transition: transform .18s ease, background .18s ease, border-color .18s ease;
+    }
+    .day-card:hover { transform: translateY(-3px); background: rgba(255,255,255,.048); }
+    .day-card:focus-visible { outline: 3px solid rgba(216,255,62,.6); outline-offset: 2px; }
+    .day-card.active { background: rgba(216,255,62,.08); border-color: rgba(216,255,62,.55); }
+    .day-top { display: flex; justify-content: space-between; gap: 8px; align-items: center; }
+    .weekday { font-weight: 800; }
+    .day-type { width: 8px; height: 8px; border-radius: 50%; }
+    .day-card[data-type="strength"] .day-type { background: var(--lime); }
+    .day-card[data-type="boxing"] .day-type { background: var(--cyan); }
+    .day-card[data-type="aerobic"] .day-type { background: var(--orange); }
+    .day-card[data-type="recovery"] .day-type { background: #738094; }
+    .course { font-size: .96rem; font-weight: 700; margin: 18px 0 8px; min-height: 46px; }
+    .day-meta { color: var(--muted); font-size: .78rem; }
+    .load-bar { height: 4px; border-radius: 99px; background: #232c38; margin-top: 16px; overflow: hidden; }
+    .load-bar span { display: block; height: 100%; border-radius: inherit; }
+    .day-card[data-type="strength"] .load-bar span { background: var(--lime); }
+    .day-card[data-type="boxing"] .load-bar span { background: var(--cyan); }
+    .day-card[data-type="aerobic"] .load-bar span { background: var(--orange); }
+    .day-card[data-type="recovery"] .load-bar span { background: #738094; }
+
+    .detail-grid { display: grid; grid-template-columns: .78fr 1.22fr; gap: 18px; margin-top: 18px; }
+    .today-card { padding: 24px; display: flex; flex-direction: column; min-height: 420px; }
+    .today-label { color: var(--lime); font-size: .8rem; font-weight: 800; letter-spacing: .12em; }
+    .today-card h2 { margin: 8px 0 6px; font-size: 2rem; letter-spacing: -.04em; }
+    .today-meta { color: var(--muted); }
+    .round-visual { flex: 1; display: grid; place-items: center; padding: 24px 0; }
+    .round-ring { width: 186px; aspect-ratio: 1; border-radius: 50%; position: relative; display: grid; place-items: center; background: conic-gradient(var(--lime) 0 72%, #26303b 72% 100%); }
+    .round-ring::after { content: ""; position: absolute; inset: 12px; border-radius: 50%; background: var(--panel); }
+    .round-ring div { position: relative; z-index: 1; text-align: center; }
+    .round-ring strong { display: block; font-size: 2.35rem; line-height: 1; letter-spacing: -.05em; }
+    .round-ring small { color: var(--muted); }
+    .rule { border-top: 1px solid var(--line); padding-top: 14px; color: var(--muted); font-size: .88rem; }
+
+    .session { padding: 24px; min-height: 420px; }
+    .session-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; }
+    .session-head h2 { margin: 0; font-size: 1.25rem; }
+    .status-pill { border-radius: 999px; padding: 7px 10px; background: rgba(216,255,62,.08); color: var(--lime); font-size: .76rem; font-weight: 800; }
+    .timeline { display: grid; }
+    .step { display: grid; grid-template-columns: 74px 18px 1fr; gap: 10px; min-height: 68px; }
+    .step-time { color: var(--muted); font-size: .78rem; padding-top: 2px; text-align: right; }
+    .step-axis { position: relative; }
+    .step-axis::before { content: ""; position: absolute; left: 8px; top: 13px; bottom: -4px; width: 1px; background: var(--line); }
+    .step:last-child .step-axis::before { display: none; }
+    .step-axis::after { content: ""; position: absolute; left: 4px; top: 4px; width: 9px; height: 9px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 0 4px rgba(216,255,62,.08); }
+    .step-body strong { display: block; font-size: .96rem; }
+    .step-body span { color: var(--muted); font-size: .84rem; }
+    .kg-tag {
+      display: inline-flex; align-items: center; width: fit-content; margin-top: 6px;
+      padding: 4px 8px; border-radius: 999px; border: 1px solid rgba(82,217,255,.22);
+      background: rgba(82,217,255,.07); color: var(--cyan) !important;
+      font-size: .75rem !important; font-weight: 750;
+    }
+
+    .load-guide { margin-top: 18px; padding: 24px; }
+    .load-guide-grid { display: grid; grid-template-columns: 1.2fr repeat(3, 1fr); gap: 10px; }
+    .load-note, .load-rule { border-radius: 16px; border: 1px solid var(--line); padding: 16px; background: rgba(255,255,255,.025); }
+    .load-note { background: linear-gradient(135deg, rgba(82,217,255,.08), rgba(216,255,62,.035)); }
+    .load-note strong, .load-rule strong { display: block; margin-bottom: 6px; }
+    .load-note p, .load-rule p { margin: 0; color: var(--muted); font-size: .83rem; }
+    .load-rule b { color: var(--lime); font-size: 1.25rem; margin-right: 5px; }
+
+    .demo-library { margin-top: 18px; padding: 24px; }
+    .concept-strip { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 0 0 18px; padding: 12px 14px; border: 1px solid rgba(255,255,255,.07); border-radius: 14px; background: rgba(255,255,255,.025); }
+    .concept-label { color: var(--muted); font-size: .76rem; font-weight: 800; letter-spacing: .04em; }
+    .concept-chips { display: flex; gap: 7px; flex-wrap: wrap; }
+    .concept-chip { padding: 5px 9px; border-radius: 999px; color: #aab5c3; background: #202835; font-size: .74rem; font-weight: 750; }
+    .license-stack { display: grid; justify-items: end; gap: 9px; max-width: 660px; }
+    .license-note { display: flex; align-items: flex-start; gap: 10px; color: var(--muted); font-size: .82rem; text-align: left; }
+    .license-note::before { content: "CC"; flex: 0 0 auto; margin-top: 1px; padding: 2px 6px; border: 1px solid rgba(82,217,255,.35); border-radius: 6px; color: var(--cyan); font-size: .68rem; font-weight: 900; letter-spacing: .06em; }
+    .offline-status { display: inline-flex; align-items: center; gap: 7px; width: fit-content; padding: 7px 10px; border-radius: 999px; border: 1px solid rgba(82,217,255,.26); background: rgba(82,217,255,.07); color: var(--cyan); font-size: .76rem; font-weight: 800; }
+    .offline-status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; box-shadow: 0 0 12px currentColor; }
+    .offline-status.ready { color: var(--green); border-color: rgba(66,219,143,.3); background: rgba(66,219,143,.07); }
+    .offline-status.offline { color: var(--lime); border-color: rgba(216,255,62,.3); background: rgba(216,255,62,.07); }
+    .demo-layout { display: grid; grid-template-columns: minmax(205px, .58fr) minmax(0, 1.42fr); gap: 18px; }
+    .demo-tabs { display: grid; grid-template-columns: 1fr; gap: 8px; align-content: start; max-height: 610px; overflow-y: auto; padding-right: 4px; }
+    .demo-tab { appearance: none; width: 100%; text-align: left; border: 1px solid var(--line); color: var(--text); background: #171e28; border-radius: 13px; padding: 12px 14px; font: inherit; font-size: .86rem; font-weight: 750; cursor: pointer; transition: border-color .18s ease, background .18s ease, transform .18s ease; }
+    .demo-tab:hover { transform: translateX(2px); border-color: rgba(216,255,62,.38); }
+    .demo-tab.active { border-color: rgba(216,255,62,.72); background: rgba(216,255,62,.09); color: var(--lime); }
+    .demo-tab:focus-visible { outline: 3px solid rgba(82,217,255,.45); outline-offset: 2px; }
+    .demo-card { border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: #111722; }
+    .demo-media { position: relative; aspect-ratio: 16 / 9; display: grid; place-items: center; overflow: hidden; background: #05070a; }
+    .demo-media video, .demo-media > img { width: 100%; height: 100%; border: 0; object-fit: contain; background: #05070a; }
+    .pose-pair { width: 100%; height: 100%; display: grid; grid-template-columns: 1fr 34px 1fr; align-items: stretch; gap: 0; background: #090d13; }
+    .pose-frame { position: relative; margin: 0; min-width: 0; overflow: hidden; background: #0c1118; }
+    .pose-frame img { width: 100%; height: 100%; object-fit: contain; display: block; }
+    .pose-frame figcaption { position: absolute; left: 10px; bottom: 10px; padding: 5px 9px; border-radius: 999px; color: #fff; background: rgba(7,9,13,.78); font-size: .72rem; font-weight: 850; backdrop-filter: blur(7px); }
+    .pose-arrow { display: grid; place-items: center; color: var(--lime); background: #101721; font-size: 1.35rem; font-weight: 900; }
+    .media-badge { position: absolute; z-index: 2; top: 12px; left: 12px; padding: 5px 9px; border: 1px solid rgba(255,255,255,.16); border-radius: 999px; background: rgba(7,9,13,.78); color: #fff; font-size: .72rem; font-weight: 800; backdrop-filter: blur(8px); }
+    .speed-controls { position: absolute; z-index: 2; right: 12px; bottom: 12px; display: flex; gap: 5px; padding: 5px; border-radius: 999px; background: rgba(7,9,13,.8); backdrop-filter: blur(8px); }
+    .speed-btn { appearance: none; border: 0; border-radius: 999px; padding: 6px 9px; background: transparent; color: #cbd4df; font: inherit; font-size: .72rem; font-weight: 800; cursor: pointer; }
+    .speed-btn.active { background: var(--lime); color: #0b0e12; }
+    .speed-btn:focus-visible { outline: 2px solid var(--cyan); outline-offset: 1px; }
+    .demo-copy { padding: 22px; }
+    .demo-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 15px; }
+    .demo-copy h3 { margin: 5px 0 0; font-size: 1.55rem; letter-spacing: -.035em; }
+    .demo-tag { display: inline-block; padding: 4px 8px; border-radius: 999px; color: var(--cyan); background: rgba(82,217,255,.09); font-size: .74rem; font-weight: 800; }
+    .source-link { flex: 0 0 auto; color: var(--lime); font-size: .78rem; font-weight: 800; text-decoration: none; padding: 7px 10px; border: 1px solid rgba(216,255,62,.26); border-radius: 10px; }
+    .source-link:hover { background: rgba(216,255,62,.08); }
+    .source-link:focus-visible { outline: 3px solid rgba(82,217,255,.45); outline-offset: 2px; }
+    .move-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .move-steps li { min-height: 92px; padding: 11px; border: 1px solid rgba(255,255,255,.065); border-radius: 13px; background: rgba(255,255,255,.028); color: #dfe7ef; font-size: .82rem; }
+    .move-steps b { display: block; margin-bottom: 6px; color: var(--lime); font-size: .72rem; letter-spacing: .06em; }
+    .mistake { margin: 13px 0 0 !important; padding: 10px 11px; color: var(--muted); font-size: .82rem; border-left: 3px solid var(--orange); background: rgba(255,159,67,.07); border-radius: 0 9px 9px 0; }
+    .attribution { margin: 14px 0 0 !important; color: #7f8a98; font-size: .72rem; line-height: 1.45; }
+    .attribution a { color: #aeb9c8; }
+    .media-note { margin: 0 0 13px; padding: 9px 11px; border-radius: 10px; background: rgba(82,217,255,.06); color: #b9c8d7; font-size: .8rem; }
+    .demo-count { color: var(--lime); font-weight: 850; }
+
+    .phase-grid { display: grid; grid-template-columns: 3fr 1fr 3fr 1fr 3fr 1fr; gap: 7px; }
+    .phase { padding: 16px; border-radius: 16px; background: #171e28; border-top: 3px solid var(--lime); min-height: 126px; }
+    .phase.deload { border-top-color: var(--orange); background: rgba(255,159,67,.06); }
+    .phase.assess { border-top-color: var(--cyan); }
+    .phase small { color: var(--muted); font-size: .76rem; }
+    .phase strong { display: block; margin: 4px 0 7px; }
+    .phase p { margin: 0; color: var(--muted); font-size: .8rem; }
+
+    .lower-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
+    .progress-panel, .readiness { padding: 24px; }
+    .progress-panel h2, .readiness h2 { margin: 0 0 6px; font-size: 1.2rem; }
+    .subcopy { color: var(--muted); margin: 0 0 20px; font-size: .85rem; }
+    .pathway { display: grid; gap: 16px; }
+    .pathway-head { display: flex; justify-content: space-between; gap: 10px; font-size: .88rem; }
+    .pathway-head span:last-child { color: var(--muted); }
+    .track { height: 8px; background: #242d39; border-radius: 99px; overflow: hidden; }
+    .track span { display: block; height: 100%; background: linear-gradient(90deg, var(--cyan), var(--lime)); border-radius: inherit; }
+
+    .traffic-buttons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 18px 0; }
+    .traffic-btn { border: 1px solid var(--line); background: #171e28; color: var(--text); border-radius: 14px; padding: 13px 8px; font-weight: 750; }
+    .traffic-btn:hover { background: #202936; }
+    .traffic-btn:focus-visible { outline: 3px solid rgba(82,217,255,.45); outline-offset: 2px; }
+    .traffic-btn.active[data-state="green"] { border-color: var(--green); color: var(--green); background: rgba(66,219,143,.07); }
+    .traffic-btn.active[data-state="yellow"] { border-color: var(--orange); color: var(--orange); background: rgba(255,159,67,.07); }
+    .traffic-btn.active[data-state="red"] { border-color: var(--red); color: var(--red); background: rgba(255,102,120,.07); }
+    .readiness-output { min-height: 86px; border-left: 3px solid var(--green); padding: 12px 14px; background: rgba(255,255,255,.025); border-radius: 0 14px 14px 0; }
+    .readiness-output strong { display: block; margin-bottom: 5px; }
+    .readiness-output p { margin: 0; color: var(--muted); font-size: .87rem; }
+
+    footer { color: var(--muted); font-size: .78rem; padding: 22px 4px 0; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+    @media (max-width: 960px) {
+      .hero, .detail-grid, .lower-grid, .demo-layout { grid-template-columns: 1fr; }
+      .week-grid { grid-template-columns: repeat(4, 1fr); }
+      .phase-grid { grid-template-columns: repeat(3, 1fr); }
+      .load-guide-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 620px) {
+      .shell { width: min(100% - 20px, 1180px); padding-top: 16px; }
+      .topbar { align-items: flex-start; }
+      .phase-chip { max-width: 160px; text-align: center; }
+      .intro, .profile, .section, .today-card, .session, .progress-panel, .readiness { padding: 18px; }
+      .profile { grid-template-columns: 1fr 1fr; }
+      .metric { min-height: 86px; padding: 13px; }
+      .metric strong { font-size: 1.35rem; }
+      .week-grid { grid-template-columns: repeat(2, 1fr); }
+      .day-card { min-height: 135px; }
+      .phase-grid { grid-template-columns: 1fr 1fr; }
+      .load-guide-grid { grid-template-columns: 1fr; }
+      .legend { display: none; }
+      .section-head { align-items: flex-start; }
+      .step { grid-template-columns: 58px 16px 1fr; }
+      .round-ring { width: 160px; }
+      .demo-library { padding: 18px; }
+      .demo-library .section-head { flex-direction: column; }
+      .license-stack { justify-items: start; max-width: none; }
+      .demo-tabs { display: flex; overflow-x: auto; padding-bottom: 4px; scroll-snap-type: x mandatory; }
+      .demo-tab { min-width: 158px; scroll-snap-align: start; }
+      .move-steps { grid-template-columns: 1fr; }
+      .demo-heading { align-items: stretch; flex-direction: column; }
+      .source-link { width: fit-content; }
+      .pose-pair { grid-template-columns: 1fr 22px 1fr; }
+      .pose-arrow { font-size: 1rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+    }
+    @media print {
+      :root { color-scheme: light; --bg: #fff; --panel: #fff; --panel-2: #fff; --line: #d5d9df; --text: #101216; --muted: #4f5966; --shadow: none; }
+      body { background: #fff; }
+      .shell { width: 100%; padding: 0; }
+      .panel { break-inside: avoid; }
+      .day-card { color: #101216; }
+      .traffic-buttons { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">BX</div>
+        <div><div class="brand-title">BOXING FOUNDATION</div><div class="brand-sub">个人训练控制台</div></div>
+      </div>
+      <div class="phase-chip">12周 · 基础建设期</div>
+    </header>
+
+    <section class="hero" aria-labelledby="report-title">
+      <div class="panel intro">
+        <div class="eyebrow">Strength · Conditioning · Boxing</div>
+        <h1 id="report-title">先把身体底座<br><span>练扎实。</span></h1>
+        <p>当前阶段不追求把所有拳击专项动作塞进一周。主线是增肌减脂与基础力量；拳击技术和回合能力稳定向上。</p>
+        <div class="priority" aria-label="训练优先级"><span>基础力量 45%</span><span>有氧与减脂 25%</span><span>拳击技术 20%</span><span>爆发力 10%</span></div>
+      </div>
+      <aside class="panel profile" aria-label="个人训练数据">
+        <h2>当前基线 → 12周目标</h2>
+        <div class="metric"><strong>173 cm</strong><small>身高</small></div>
+        <div class="metric"><strong>73.5 kg</strong><small>当前体重</small></div>
+        <div class="metric accent"><strong>70–71.5</strong><small>目标体重 kg</small></div>
+        <div class="metric"><strong>≈23%</strong><small>当前体脂</small></div>
+        <div class="metric accent"><strong>1次</strong><small>标准引体目标</small></div>
+        <div class="metric"><strong>3×2</strong><small>当前实战回合</small></div>
+      </aside>
+    </section>
+
+    <section class="panel section" aria-labelledby="week-title">
+      <div class="section-head">
+        <div><h2 id="week-title">本周课程地图</h2><p>点击任意一天，查看完整训练流程</p></div>
+        <div class="legend" aria-label="训练类型图例"><span><i class="dot strength"></i>力量</span><span><i class="dot boxing"></i>拳击</span><span><i class="dot aerobic"></i>有氧</span><span><i class="dot recovery"></i>恢复</span></div>
+      </div>
+      <div class="week-grid" id="weekGrid" aria-label="一周训练课程"></div>
+    </section>
+
+    <section class="detail-grid" aria-live="polite">
+      <aside class="panel today-card">
+        <div class="today-label" id="todayLabel">周五 · 有氧 SESSION</div>
+        <h2 id="todayTitle">Zone 2＋活动度</h2>
+        <div class="today-meta" id="todayMeta">RPE 3–4 · 3个训练模块</div>
+        <div class="round-visual">
+          <div class="round-ring" id="roundRing" style="background: conic-gradient(var(--lime) 0 38%, #26303b 38% 100%);"><div><strong id="durationValue">50</strong><small>分钟</small></div></div>
+        </div>
+        <div class="rule" id="todayRule">全程能够完整说话；结束时仍感觉可以继续。</div>
+      </aside>
+      <article class="panel session">
+        <div class="session-head"><h2>课程流程</h2><span class="status-pill" id="intensityPill">RPE 3–4</span></div>
+        <div class="timeline" id="sessionTimeline"><div class="step"><div class="step-time">0–5分</div><div class="step-axis"></div><div class="step-body"><strong>进入状态</strong><span>逐渐提高单车、走路或椭圆机节奏</span></div></div><div class="step"><div class="step-time">5–40分</div><div class="step-axis"></div><div class="step-body"><strong>Zone 2</strong><span>稳定35分钟；保持对话强度</span></div></div><div class="step"><div class="step-time">40–50分</div><div class="step-axis"></div><div class="step-body"><strong>活动度</strong><span>踝、髋屈肌、胸椎、胸肌与肩外旋</span></div></div></div>
+      </article>
+    </section>
+
+    <section class="panel demo-library" aria-labelledby="demo-title">
+      <div class="section-head">
+        <div><h2 id="demo-title">当天具体动作演示</h2><p id="demoSubcopy">切换上方日期，这里只显示当天真正要做的动作。</p></div>
+        <div class="license-stack">
+          <div class="license-note">真人视频与双姿态照片全部保存在站内，采用开放许可、公共领域或本站生成的教学素材，不连接外部播放器。</div>
+          <span class="offline-status" id="offlineStatus" role="status" aria-live="polite">正在准备完整离线动作库</span>
+        </div>
+      </div>
+      <div class="concept-strip"><span class="concept-label">阶段结构（不是动作）</span><div class="concept-chips" id="conceptChips"></div></div>
+      <div class="demo-layout">
+        <div class="demo-tabs" id="demoTabs" role="tablist" aria-label="训练动作演示"></div>
+        <article class="demo-card" id="demoCard" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section class="panel load-guide" aria-labelledby="load-title">
+      <div class="section-head">
+        <div><h2 id="load-title">KG 起始重量导航</h2><p>蓝色标签是第 1 周试练范围，不是必须完成的考核重量</p></div>
+      </div>
+      <div class="load-guide-grid">
+        <div class="load-note"><strong>重量口径</strong><p>杠铃／六角杠写总重（含杆）；“2×”表示每只哑铃；辅助引体的 kg 越大越轻松；器械配重只和同一台机器比较。</p></div>
+        <div class="load-rule"><strong><b>01</b>先取下限</strong><p>第一次先用建议范围下限完成热身与首组，动作稳定再上调。</p></div>
+        <div class="load-rule"><strong><b>02</b>保留 2 次</strong><p>每组结束时应感觉还能规范完成约 2 次，这才是合适工作重量。</p></div>
+        <div class="load-rule"><strong><b>03</b>按表现修正</strong><p>只剩 0–1 次余力就减 5%–10%；剩余 4 次以上，下次小幅加重。</p></div>
+      </div>
+    </section>
+
+    <section class="panel section" aria-labelledby="phase-title">
+      <div class="section-head"><div><h2 id="phase-title">12周进度轴</h2><p>同一周结构，负荷逐步变化；第4、8周主动减量</p></div></div>
+      <div class="phase-grid">
+        <div class="phase"><small>WEEK 01–03</small><strong>建立基础</strong><p>确定工作重量，在次数区间内稳步增加。</p></div>
+        <div class="phase deload"><small>WEEK 04</small><strong>减量</strong><p>主项各减1组，取消高强度结尾。</p></div>
+        <div class="phase"><small>WEEK 05–07</small><strong>提升</strong><p>达到次数上限后，小幅增加重量。</p></div>
+        <div class="phase deload"><small>WEEK 08</small><strong>减量</strong><p>消除疲劳，保持动作熟练度。</p></div>
+        <div class="phase"><small>WEEK 09–11</small><strong>巩固</strong><p>稳定3回合质量后，再考虑第4回合。</p></div>
+        <div class="phase assess"><small>WEEK 12</small><strong>评估</strong><p>复查体重、腰围、力量与回合质量。</p></div>
+      </div>
+    </section>
+
+    <section class="lower-grid">
+      <article class="panel progress-panel">
+        <h2>关键能力路线</h2>
+        <p class="subcopy">用过程指标替代每天测试极限。</p>
+        <div class="pathway">
+          <div><div class="pathway-head"><strong>第一个标准引体</strong><span>下拉＋辅助引体</span></div><div class="track"><span style="width:36%"></span></div></div>
+          <div><div class="pathway-head"><strong>卧推双递进</strong><span>4×5 → 4×8 → 加2.5 kg</span></div><div class="track"><span style="width:42%"></span></div></div>
+          <div><div class="pathway-head"><strong>实战回合能力</strong><span>稳定3×2，再加第4回合</span></div><div class="track"><span style="width:50%"></span></div></div>
+          <div><div class="pathway-head"><strong>体重与腰围</strong><span>每周下降0.2–0.4 kg</span></div><div class="track"><span style="width:25%"></span></div></div>
+        </div>
+      </article>
+
+      <article class="panel readiness">
+        <h2>今天该怎么练？</h2>
+        <p class="subcopy">按睡眠、酸痛和热身感受选择状态。</p>
+        <div class="traffic-buttons" role="group" aria-label="选择训练状态">
+          <button class="traffic-btn active" data-state="green" type="button">🟢 正常</button>
+          <button class="traffic-btn" data-state="yellow" type="button">🟡 疲劳</button>
+          <button class="traffic-btn" data-state="red" type="button">🔴 异常</button>
+        </div>
+        <div class="readiness-output" id="readinessOutput" role="status"><strong>完整执行</strong><p>睡眠正常、无关节痛且热身状态正常：按照课程卡完成，所有力量动作保留约2次余力。</p></div>
+      </article>
+    </section>
+
+    <footer><span>蛋白质 130–150 g/天 · 热量缺口约250–350 kcal · 日常约8,000步</span><span>锐痛、眩晕、胸部异常或头部受击后不适：停止训练并接受适当评估。</span></footer>
+  </main>
+
+  <script>
+    const days = [
+      {
+        day: '周一', type: 'strength', title: '全身力量 A', duration: 78, intensity: 'RPE 7–8', load: 78,
+        rule: '卧推完成4×8后加2.5 kg；所有工作组保留约2次余力。',
+        steps: [
+          ['0–8分','热身','轻有氧、肩髋踝活动、递增热身组'],
+          ['8–14分','药球胸前平推','爆发激活 · 3×4','建议 3–5 kg 药球'],
+          ['14–29分','深蹲','3×5–8 · RIR 2','试练 20–35 kg 总重'],
+          ['29–49分','卧推','4×5–8 · RIR 2','若 40 kg 是极限：27.5–32.5 kg'],
+          ['49–61分','高位下拉','4×8–12 · RIR 2','同机试练 25–40 kg'],
+          ['61–71分','罗马尼亚硬拉','3×8–10 · RIR 2','试练 25–40 kg 总重'],
+          ['71–78分','面拉＋死虫','辅助超级组 · 面拉 2×12–15＋死虫每侧2×10','面拉同机 10–20 kg；死虫自重']
+        ]
+      },
+      {
+        day: '周二', type: 'boxing', title: '拳击技术', duration: 60, intensity: 'RPE 6–7', load: 62,
+        rule: '结束时仍应保留2–3回合余量；当天不追加战绳、冲刺或波比跳。',
+        steps: [
+          ['0–10分','热身','关节活动＋轻松跳绳2回合'],
+          ['10–22分','站架／刺拳／1–2退出／防反','空击4回合；每回合只练一个技术主题'],
+          ['22–37分','沙袋或手靶组合','5回合；对应空击主题，约70%力量'],
+          ['37–50分','步法与防守','4组×90秒；平衡优先于速度'],
+          ['50–60分','侧桥＋死虫','核心训练；最后用慢呼吸恢复']
+        ]
+      },
+      {
+        day: '周三', type: 'recovery', title: '恢复日', duration: 30, intensity: '轻松', load: 22,
+        rule: '散步可以，补做力量或高强度体能不可以。',
+        steps: [
+          ['任选','轻松散步','30–60分钟，不追求速度'],
+          ['任选','活动度','髋、踝、胸椎与肩部轻柔活动10分钟'],
+          ['全天','恢复重点','正常饮食、补足睡眠、观察关节和酸痛']
+        ]
+      },
+      {
+        day: '周四', type: 'strength', title: '全身力量 B', duration: 76, intensity: 'RPE 7–8', load: 76,
+        rule: '辅助引体完成4×10后，减少2.5–5 kg辅助；不做磨蹭次数。',
+        steps: [
+          ['0–8分','热身','轻有氧、活动度、递增热身组'],
+          ['8–14分','药球旋转侧抛','爆发激活 · 每侧3×4','建议 3–5 kg 药球'],
+          ['14–29分','六角杠硬拉','3×5–6 · RIR 2','试练 40–60 kg 总重'],
+          ['29–42分','保加利亚分腿蹲','每侧3×8–10 · RIR 2','自重起；稳定后 2×6–10 kg'],
+          ['42–55分','辅助引体','4×6–10；肩胛受控','试练 30–45 kg 辅助'],
+          ['55–68分','肩上推举＋坐姿划船','推拉超级组 · 各3组','地雷杆端 5–10 kg 或单只哑铃 6–10 kg；划船同机 25–40 kg'],
+          ['68–76分','弯举＋Pallof抗旋转','辅助超级组 · 各2组','弯举 2×6–10 kg；Pallof 同机 7.5–15 kg']
+        ]
+      },
+      {
+        day: '周五', type: 'aerobic', title: 'Zone 2＋活动度', duration: 50, intensity: 'RPE 3–4', load: 38,
+        rule: '全程能够完整说话；结束时仍感觉可以继续。',
+        steps: [
+          ['0–5分','进入状态','逐渐提高单车、走路或椭圆机节奏'],
+          ['5–40分','Zone 2','稳定35分钟；保持对话强度'],
+          ['40–50分','活动度','踝、髋屈肌、胸椎、胸肌与肩外旋']
+        ]
+      },
+      {
+        day: '周六', type: 'boxing', title: '拳击综合＋专项体能', duration: 65, intensity: 'RPE 7–8', load: 80,
+        rule: '有实战时，实战替换3个体能回合，不叠加。',
+        steps: [
+          ['0–10分','热身','动态活动＋跳绳2回合'],
+          ['10–19分','空击3回合','应用本周技术主题'],
+          ['19–31分','沙袋或手靶4回合','受控力量下应用主题'],
+          ['31–40分','专项体能3回合','15秒快速组合＋15秒移动'],
+          ['40–55分','可选技术','防守练习或教练控制的技术实战'],
+          ['55–65分','整理','轻移动与呼吸恢复']
+        ]
+      },
+      {
+        day: '周日', type: 'recovery', title: '完全休息', duration: 0, intensity: '恢复', load: 8,
+        rule: '不补课；为周一力量A恢复精神和肌肉状态。',
+        steps: [
+          ['全天','允许','日常散步、轻松拉伸、正常饮食'],
+          ['全天','避免','补做遗漏课程、硬实战、冲刺与力竭训练'],
+          ['晚上','准备下周','确认睡眠、训练装备和周一工作重量']
+        ]
+      }
+    ];
+
+    const typeName = { strength: '力量', boxing: '拳击', aerobic: '有氧', recovery: '恢复' };
+    const demoTabs = document.getElementById('demoTabs');
+    const weekGrid = document.getElementById('weekGrid');
+    const todayIndex = (new Date().getDay() + 6) % 7;
+
+    days.forEach((item, index) => {
+      const button = document.createElement('button');
+      button.className = 'day-card';
+      button.type = 'button';
+      button.dataset.type = item.type;
+      button.setAttribute('aria-label', `${item.day} ${item.title}`);
+      button.innerHTML = `<div class="day-top"><span class="weekday">${item.day}${index === todayIndex ? ' · 今天' : ''}</span><i class="day-type" aria-hidden="true"></i></div><div class="course">${item.title}</div><div class="day-meta">${item.duration ? item.duration + '分钟' : '完全休息'} · ${item.intensity}</div><div class="load-bar" aria-label="训练负荷"><span style="width:${item.load}%"></span></div>`;
+      button.addEventListener('click', () => selectDay(index));
+      weekGrid.appendChild(button);
+    });
+
+    function selectDay(index) {
+      const item = days[index];
+      [...weekGrid.children].forEach((card, i) => card.classList.toggle('active', i === index));
+      document.getElementById('todayLabel').textContent = `${item.day} · ${typeName[item.type].toUpperCase()} SESSION`;
+      document.getElementById('todayTitle').textContent = item.title;
+      document.getElementById('todayMeta').textContent = `${item.intensity} · ${item.steps.length}个训练模块`;
+      document.getElementById('durationValue').textContent = item.duration || '休息';
+      document.querySelector('#roundRing small').textContent = item.duration ? '分钟' : '日';
+      document.getElementById('roundRing').style.background = `conic-gradient(var(--lime) 0 ${Math.max(item.load, 8)}%, #26303b ${Math.max(item.load, 8)}% 100%)`;
+      document.getElementById('todayRule').textContent = item.rule;
+      document.getElementById('intensityPill').textContent = item.intensity;
+      const timeline = document.getElementById('sessionTimeline');
+      timeline.innerHTML = item.steps.map(step => `<div class="step"><div class="step-time">${step[0]}</div><div class="step-axis"></div><div class="step-body"><strong>${step[1]}</strong><span>${step[2]}</span>${step[3] ? `<span class="kg-tag">${step[3]}</span>` : ''}</div></div>`).join('');
+      window.currentDayIndex = index;
+      if (typeof window.renderDayDemos === 'function') window.renderDayDemos(index);
+    }
+
+    const readinessCopy = {
+      green: ['完整执行','睡眠正常、无关节痛且热身状态正常：按照课程卡完成，所有力量动作保留约2次余力。','var(--green)'],
+      yellow: ['自动减量','睡眠不足、异常沉重或酸痛持续：取消可选动作，大动作各减少1组，并保持至少3次余力。','var(--orange)'],
+      red: ['停止训练','出现锐痛、眩晕、胸部异常、神经症状或头部受击后不适：停止训练，并接受适当专业评估。','var(--red)']
+    };
+
+    document.querySelectorAll('.traffic-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.traffic-btn').forEach(item => item.classList.toggle('active', item === button));
+        const [title, copy, color] = readinessCopy[button.dataset.state];
+        const output = document.getElementById('readinessOutput');
+        output.style.borderLeftColor = color;
+        output.innerHTML = `<strong>${title}</strong><p>${copy}</p>`;
+      });
+    });
+
+    selectDay(todayIndex);
+  </script>
+
+
+  <script>
+    if (false) {
+    const licensedDemos = [
+      {
+        id: 'squat', name: '深蹲', tag: '下肢力量',
+        media: './assets/videos/squat.webm', mediaType: 'video/webm',
+        source: 'https://commons.wikimedia.org/wiki/File:Squat_-_exercise_demonstration_video.webm',
+        sourceLabel: 'Wikimedia 原始页面',
+        credit: 'FitnessScape · CC BY 3.0',
+        steps: [['01 起始', '脚掌三点压稳，杠铃落在上背，先吸气收紧躯干。'], ['02 下蹲', '臀部与膝盖同时弯曲，膝盖始终跟随脚尖方向。'], ['03 起身', '脚掌推开地面，胸口和髋部同步上升。']],
+        mistake: '重点观察：不要塌腰、膝盖内扣，也不要为了更深而失去躯干控制。'
+      },
+      {
+        id: 'press', name: '杠铃卧推', tag: '水平推',
+        media: './assets/videos/bench-press.webm', mediaType: 'video/webm',
+        source: 'https://commons.wikimedia.org/wiki/File:Bench_press_-_exercise_demonstration_video.webm',
+        sourceLabel: 'Wikimedia 原始页面',
+        credit: 'FitnessScape · CC BY 3.0',
+        steps: [['01 固定', '肩胛向后向下收紧，脚掌踩稳，眼睛位于杠铃后方。'], ['02 下放', '手腕保持中立，杠铃可控地落向胸部下缘。'], ['03 推起', '脚继续踩地，杠铃向上并略向肩架方向回推。']],
+        mistake: '重点观察：臀部不离凳、杠铃不弹胸、肩膀不向耳朵耸起。'
+      },
+      {
+        id: 'pull', name: '辅助引体 / 高位下拉', tag: '垂直拉',
+        media: './assets/videos/pull-ups.webm', mediaType: 'video/webm',
+        source: 'https://commons.wikimedia.org/wiki/File:Pull-ups_-_exercise_demonstration_video.webm',
+        sourceLabel: 'Wikimedia 原始页面',
+        credit: 'FitnessScape · CC BY 3.0',
+        steps: [['01 悬挂', '手臂伸直但肩胛保持控制，身体不要前后摆动。'], ['02 启动', '先把肩胛向下收，再让肘部向身体两侧和后方走。'], ['03 回位', '缓慢伸肘回到底部，不要直接坠落。']],
+        mistake: '高位下拉使用相同的肩胛与肘部路径；不要大幅后仰或用身体甩动借力。'
+      },
+      {
+        id: 'rdl', name: '硬拉髋铰链 / RDL', tag: '髋铰链',
+        media: './assets/videos/deadlift.webm', mediaType: 'video/webm',
+        source: 'https://commons.wikimedia.org/wiki/File:Deadlift_-_exercise_demonstration_video.webm',
+        sourceLabel: 'Wikimedia 原始页面',
+        credit: 'FitnessScape · CC BY 3.0',
+        mediaNote: '视频展示标准硬拉的起身与锁定；做 RDL 时从站姿开始，只下放到大腿后侧明显拉紧的位置。',
+        steps: [['01 站稳', '杠铃贴住大腿，膝盖微屈，背部保持中立。'], ['02 髋折叠', '臀部向后推，杠铃始终贴腿向下滑。'], ['03 站起', '感到大腿后侧拉伸后，用臀部把髋推回杠铃。']],
+        mistake: '深度由腘绳肌张力决定；不要把它做成深蹲，也不要圆背追求更低。'
+      },
+      {
+        id: 'landmine', name: '肩上推举 / 地雷管替代', tag: '推举＋躯干稳定',
+        media: './assets/videos/shoulder-press.webm', mediaType: 'video/webm',
+        source: 'https://commons.wikimedia.org/wiki/File:Shoulder_press_-_exercise_demonstration_video.webm',
+        sourceLabel: 'Wikimedia 原始页面',
+        credit: 'FitnessScape · CC BY 3.0',
+        mediaNote: '视频示范站姿肩上推举。若使用半跪地雷管，保持同样的肋骨、骨盆和肩胛控制，推举轨迹改为斜上方。',
+        steps: [['01 固定', '站姿或半跪姿都先收紧臀腹，让骨盆和肋骨对齐。'], ['02 推举', '肩推垂直向上；地雷管沿器械轨迹斜上方推出。'], ['03 回位', '手臂伸直时保持肩胛自然上旋，再控制重量回到肩前。']],
+        mistake: '不要靠腰椎后仰换取高度；先用轻重量建立稳定轨迹。'
+      },
+      {
+        id: 'boxing', name: '刺拳＋1–2 退出', tag: '拳击技术',
+        media: './assets/videos/boxing.webm', mediaType: 'video/webm',
+        source: 'https://commons.wikimedia.org/wiki/File:Boxing_training.webm',
+        sourceLabel: 'Wikimedia 原始页面',
+        credit: 'Evworo · CC BY-SA 3.0',
+        steps: [['01 刺拳', '前肩保护下巴，拳打直线，出拳后立刻回到护脸。'], ['02 后手直拳', '后脚蹬地、髋肩转动，前手已经回收保护。'], ['03 退出', '组合结束马上小步后撤，保持原有站架宽度与平衡。']],
+        mistake: '这段真人素材用于观察站架、重心和回收速度；组合顺序与退出脚步按上面三步执行。'
+      },
+      {
+        id: 'chestpass', name: '药球胸前平推', tag: '爆发激活',
+        media: './assets/videos/medicine-ball.mp4', mediaType: 'video/mp4',
+        source: 'https://www.pexels.com/video/two-men-using-a-medicine-ball-for-a-routine-exercise-4761427/',
+        sourceLabel: 'Pexels 素材页',
+        credit: 'cottonbro studio · Pexels 免费许可',
+        steps: [['01 准备', '面对结实墙面，药球放在胸前，膝盖轻微弯曲。'], ['02 爆发', '双脚压地，同时快速伸展手臂把球直线推出。'], ['03 重置', '接球后重新稳定站姿，每一次都追求速度与质量。']],
+        mistake: '球太重就会变成慢推；此处使用轻球做高质量爆发，不做到力竭。'
+      },
+      {
+        id: 'rope', name: '跳绳基础节奏', tag: '拳击热身',
+        media: './assets/videos/jump-rope.mp4', mediaType: 'video/mp4',
+        source: 'https://www.pexels.com/video/person-doing-jump-rope-at-a-boxing-gym-8745329/',
+        sourceLabel: 'Pexels 素材页',
+        credit: 'Ron Lach · Pexels 免费许可',
+        steps: [['01 姿势', '身体直立，肘靠近身体，肩膀放松。'], ['02 转绳', '主要用手腕带动绳子，脚尖轻轻离地即可。'], ['03 节奏', '先稳定连续跳，再增加速度；失误后马上重置。']],
+        mistake: '避免大跳和整条手臂甩绳；小而轻的弹跳更接近拳击热身需要。'
+      }
+    ];
+
+    function licensedMediaMarkup(item) {
+      return '<div class="demo-media">' +
+        '<span class="media-badge">本地真人视频 · 可离线</span>' +
+        '<video id="activeDemoVideo" controls autoplay loop muted playsinline preload="auto" aria-label="' + item.name + '真人动作演示">' +
+        '<source src="' + item.media + '" type="' + item.mediaType + '">你的浏览器无法播放该视频。</video>' +
+        '<div class="speed-controls" role="group" aria-label="播放速度">' +
+        '<button class="speed-btn active" type="button" data-speed="0.5" aria-pressed="true">0.5×</button>' +
+        '<button class="speed-btn" type="button" data-speed="0.75" aria-pressed="false">0.75×</button>' +
+        '<button class="speed-btn" type="button" data-speed="1" aria-pressed="false">1×</button>' +
+        '</div></div>';
+    }
+
+    function selectLicensedDemo(id) {
+      const item = licensedDemos.find(function (demo) { return demo.id === id; });
+      Array.from(demoTabs.children).forEach(function (tab) {
+        const selected = tab.dataset.demo === id;
+        tab.classList.toggle('active', selected);
+        tab.setAttribute('aria-selected', selected ? 'true' : 'false');
+        tab.tabIndex = selected ? 0 : -1;
+      });
+
+      document.getElementById('demoCard').innerHTML =
+        licensedMediaMarkup(item) +
+        '<div class="demo-copy">' +
+          '<div class="demo-heading"><div><span class="demo-tag">' + item.tag + '</span><h3>' + item.name + '</h3></div>' +
+          '<a class="source-link" href="' + item.source + '" target="_blank" rel="noopener noreferrer">' + item.sourceLabel + '</a></div>' +
+          (item.mediaNote ? '<p class="media-note">' + item.mediaNote + '</p>' : '') +
+          '<ol class="move-steps">' + item.steps.map(function (step) { return '<li><b>' + step[0] + '</b>' + step[1] + '</li>'; }).join('') + '</ol>' +
+          '<p class="mistake">' + item.mistake + '</p>' +
+          '<p class="attribution">素材来源与授权：<a href="' + item.source + '" target="_blank" rel="noopener noreferrer">' + item.credit + '</a>。首次练习仍建议由现场教练检查动作。</p>' +
+        '</div>';
+
+      const video = document.getElementById('activeDemoVideo');
+      if (video) {
+        video.playbackRate = 0.5;
+        document.querySelectorAll('.speed-btn').forEach(function (button) {
+          button.addEventListener('click', function () {
+            video.playbackRate = Number(button.dataset.speed);
+            document.querySelectorAll('.speed-btn').forEach(function (itemButton) {
+              const active = itemButton === button;
+              itemButton.classList.toggle('active', active);
+              itemButton.setAttribute('aria-pressed', active ? 'true' : 'false');
+            });
+          });
+        });
+      }
+    }
+
+    demoTabs.innerHTML = '';
+    licensedDemos.forEach(function (item, index) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'demo-tab';
+      button.dataset.demo = item.id;
+      button.setAttribute('role', 'tab');
+      button.setAttribute('aria-label', '查看 ' + item.name + ' 真人演示');
+      button.setAttribute('aria-selected', index === 0 ? 'true' : 'false');
+      button.tabIndex = index === 0 ? 0 : -1;
+      button.textContent = item.name;
+      button.addEventListener('click', function () { selectLicensedDemo(item.id); });
+      demoTabs.appendChild(button);
+    });
+
+    demoTabs.addEventListener('keydown', function (event) {
+      if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp' && event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+      event.preventDefault();
+      const tabs = Array.from(demoTabs.children);
+      const current = tabs.indexOf(document.activeElement);
+      const forward = event.key === 'ArrowDown' || event.key === 'ArrowRight';
+      const next = (current + (forward ? 1 : -1) + tabs.length) % tabs.length;
+      tabs[next].focus();
+      selectLicensedDemo(tabs[next].dataset.demo);
+    });
+
+    selectLicensedDemo('squat');
+    }
+  </script>
+  <script src="./app.js"></script>
+  <script>
+    (function () {
+      const status = document.getElementById('offlineStatus');
+      function setStatus(text, state) {
+        status.textContent = text;
+        status.classList.remove('ready', 'offline');
+        if (state) status.classList.add(state);
+      }
+
+      if (location.protocol === 'file:') {
+        setStatus('本地离线包 · 可直接播放', 'offline');
+        return;
+      }
+
+      if (!('serviceWorker' in navigator)) {
+        setStatus('本机浏览器不支持离线缓存', '');
+        return;
+      }
+
+      navigator.serviceWorker.register('./service-worker.js').then(function (registration) {
+        const worker = registration.installing || registration.waiting || registration.active;
+        function checkReady() {
+          if (worker && worker.state === 'activated') setStatus('完整动作库已保存 · 可断网使用', 'ready');
+        }
+        if (worker && worker.state !== 'activated') worker.addEventListener('statechange', checkReady);
+        navigator.serviceWorker.ready.then(function () {
+          setStatus('完整动作库已保存 · 可断网使用', 'ready');
+        });
+        checkReady();
+      }).catch(function () {
+        setStatus('离线缓存未完成，请刷新重试', '');
+      });
+
+      window.addEventListener('offline', function () {
+        setStatus('当前离线 · 动作演示可正常查看', 'offline');
+      });
+      window.addEventListener('online', function () {
+        setStatus('完整动作库已保存 · 可断网使用', 'ready');
+      });
+    })();
+  </script>
+</body></html>

@@ -44,6 +44,8 @@ flowchart LR
 - 起始重量的范围或校准办法，并明确标示总杠铃重量、单手哑铃重量、器械重量等单位
 - 阶段计划、减量周、测试点和专项比赛前的调整
 - 绿/黄/红恢复信号与替代方案
+- 可按训练日联动的完整动作库：训练模块与具体动作分开呈现
+- 可选的本地动作媒体、离线缓存与手机主屏幕安装版本
 
 ## 案例预览：业余拳击 + 体成分重组
 
@@ -59,6 +61,8 @@ flowchart LR
 | 负重按 RPE/RIR 校准 | 即使没有完整测试数据，也能从可控强度开始渐进。 |
 
 这是输出样式示例，不是对所有拳击训练者的固定处方；实际计划会按目标、课表、器械、伤病与恢复情况调整。
+
+仓库内同时提供了这套案例的[可运行网页源码](examples/boxing-training-dashboard/)。它包含周一到周日联动课程、周一到周五完整动作库、本地演示媒体和离线缓存，可作为视觉报告实现参考。
 
 ## 使用方式
 
@@ -100,13 +104,13 @@ Train Forge 是训练规划工具，不替代医生、康复师、持证教练�
 
 ## 隐私说明
 
-公开版本不包含任何个人训练档案、体检数据或既有课程表。使用时只提供你愿意分享的信息即可；可跳过的问题会以保守假设处理。
+公开版本不包含姓名、联系方式、账号信息或体检报告。拳击案例只保留匿名示例指标和课程表。使用 Skill 时只提供你愿意分享的信息即可；可跳过的问题会以保守假设处理。
 
 ## 安装与发布
 
 本仓库根目录是一个可移植的插件结构：`plugin.json` 位于根目录，Skill 位于 `skills/train-forge/`。
 
-- 直接使用发行包：[下载 v1.0.0 ZIP](release/train-forge-plugin-v1.0.0.zip)
+- 直接使用发行包：[下载 v1.1.0 ZIP](release/train-forge-plugin-v1.1.0.zip)
 - 在 ChatGPT / Codex 的 Plugins 页面上传 ZIP 后，可在新对话中安装并调用。
 - 如果你在团队或工作区内分发，可将该插件发布到工作区并控制可用角色。
 
@@ -125,11 +129,13 @@ Train Forge 是训练规划工具，不替代医生、康复师、持证教练�
 │           ├── intake-and-safety.md
 │           ├── program-blueprints.md
 │           ├── sport-demand-analysis.md
-│           └── report-template.md
-├── assets/train-forge-cover.png
-└── release/train-forge-plugin-v1.0.0.zip
+│           ├── report-template.md
+│           └── visual-report-library.md
+├── examples/boxing-training-dashboard/
+├── assets/train-forge-cover.svg
+└── release/train-forge-plugin-v1.1.0.zip
 ```
 
-## 版本 1.0.0
+## 版本 1.1.0
 
-首个可分享版本，包含：适应性问答、三类训练者分流、通用训练与专项体能规划、可跳过的健康信息收集、起始重量与强度说明、恢复监控及可视化课程报告规范。
+在原有适应性问答、训练规划和安全边界基础上，新增完整动作库规范：按日同步课程与动作、区分训练模块和具体动作、核对所有项目覆盖、使用有来源的本地媒体，并支持离线缓存与手机主屏幕安装。仓库中的拳击案例同步升级为可运行网页。

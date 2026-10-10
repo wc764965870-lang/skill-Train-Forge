@@ -138,3 +138,5 @@ When a webpage is requested, reuse the stored boxing report's information hierar
 - Exact selectable text; no screenshot-only timetable
 
 Use a focused performance-dashboard visual style appropriate to the activity. Preserve readability and do not turn the report into a decorative landing page.
+
+When the webpage includes exercise demonstrations or must work offline, read `visual-report-library.md`. Treat the selected day's session and its action library as one data model so they cannot drift apart.

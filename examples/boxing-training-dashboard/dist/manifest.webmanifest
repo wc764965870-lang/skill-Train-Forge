@@ -1,0 +1,11 @@
+{
+  "name": "12周拳击增肌减脂训练报告",
+  "short_name": "拳击训练",
+  "description": "包含离线真人动作视频的12周拳击、力量与体能训练计划",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07090d",
+  "theme_color": "#07090d"
+}
