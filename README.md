@@ -8,6 +8,30 @@ Train Forge 是一个面向 ChatGPT 与 Codex 的训练规划 Skill。它不会�
 
 无论目标是减脂增肌、增强体能、提高力量，还是为拳击、跑步、球类、攀岩等专项运动做体能支持，都可以从同一套动态问答开始。
 
+## 界面预览
+
+### 训练总览与每周课程
+
+![12周拳击训练控制台与每周课程地图](assets/previews/dashboard-overview.webp)
+
+### 每日联动动作库
+
+<table>
+  <tr>
+    <td width="50%"><img src="assets/previews/monday-action-library.webp" alt="周一完整动作库与药球胸前平推演示"><br><strong>周一 · 7 个具体动作</strong><br>课程阶段与具体动作分开呈现。</td>
+    <td width="50%"><img src="assets/previews/boxing-technique-demo.webp" alt="周二拳击技术真人视频演示"><br><strong>周二 · 拳击技术</strong><br>本地真人视频、速度控制与动作要点。</td>
+  </tr>
+</table>
+
+### 精确动作与移动端
+
+<table>
+  <tr>
+    <td width="58%"><img src="assets/previews/rotational-throw-demo.webp" alt="药球旋转侧抛双姿态教学图"><br><strong>动作匹配</strong><br>旋转侧抛使用对应动作，不拿胸前平推或过顶抛代替。</td>
+    <td width="42%" align="center"><img src="assets/previews/mobile-dashboard.webp" alt="训练计划手机端总览" width="47%"> <img src="assets/previews/mobile-action-library.webp" alt="动作库手机端页面" width="47%"><br><strong>手机端与离线状态</strong><br>窄屏无横向溢出，可添加到主屏幕。</td>
+  </tr>
+</table>
+
 ## 它如何工作
 
 ```mermaid
